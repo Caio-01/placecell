@@ -81,7 +81,7 @@ export function FooterHome() {
       {/* Texto do footer */}
       <div
         ref={textFooterRef}
-        className="flex w-96 flex-col space-y-2 text-center opacity-0 md:w-1/3 md:text-justify"
+        className="flex w-80 flex-col space-y-2 text-center opacity-0 md:w-1/3 md:text-justify"
       >
         <h1 className="text-5xl">
           Place<span className="text-btn-yellow">Cell</span>

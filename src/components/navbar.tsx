@@ -30,7 +30,7 @@ export function Navbar() {
       <div className="flex-shrink-0">
         <Image src={LogoImg} alt="logo_placeCell" />
       </div>
-      <nav className="flex gap-8 md:gap-16  text-lg md:text-2xl">
+      <nav className="flex gap-6 md:gap-16  text-lg md:text-2xl">
         <a
           className="duration-500 hover:text-btn-yellow hover:transition"
           href="/"

@@ -144,7 +144,7 @@ export function SectionProducts() {
                 }
               }}
               key={product.id}
-              className="flex h-60 w-32 flex-col items-center justify-center space-y-3 rounded-3xl bg-card-gradient md:h-80 md:w-60 md:space-y-8 2xl:h-96 2xl:w-72"
+              className="flex h-60 w-[7.4rem] flex-col items-center justify-center space-y-3 rounded-3xl bg-card-gradient md:h-80 md:w-60 md:space-y-8 2xl:h-96 2xl:w-72"
             >
               <Image
                 className="w-16 md:w-28 2xl:w-32"
