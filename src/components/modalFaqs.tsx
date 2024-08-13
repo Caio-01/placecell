@@ -91,17 +91,6 @@ export function ModalFaqs({ closeModalFaqs }: CreateModalFaqsProps) {
               condição original e com a embalagem intacta.
             </p>
           </li>
-
-          <li>
-            <span className="text-justify font-paragraph font-medium text-btn-yellow">
-              Como entro em contato com o suporte ao cliente?
-            </span>
-            <p className="text-justify font-paragraph text-sm text-my-gray">
-              Você pode entrar em contato com nossa equipe de suporte ao cliente
-              via e-mail, telefone ou chat ao vivo no nosso site. Estamos
-              disponíveis para ajudar você com qualquer dúvida ou problema.
-            </p>
-          </li>
         </ul>
       </div>
     </div>
