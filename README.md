@@ -2,7 +2,7 @@
 
 PlaceCell é uma landing page desenvolvida com o objetivo principal de demonstrar uma aplicação responsiva e funcional utilizando ferramentas modernas de desenvolvimento web. O projeto foi realizado com o intuito de praticar e melhorar minhas habilidades com as tecnologias utilizadas, focando na apresentação clara e atrativa de informações sobre o projeto. 🚀
 
-Deploy: [Clique aqui]()
+Deploy: [Clique aqui](https://placecell.vercel.app/)
 
 ![Imagem Home](./src/assets/images/img-home.png)
 
