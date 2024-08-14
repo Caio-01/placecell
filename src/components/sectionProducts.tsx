@@ -102,20 +102,20 @@ export function SectionProducts() {
       className="relative flex h-svh w-full flex-col justify-center"
     >
       {/* Div dos Products */}
-      <div className="flex w-full flex-col items-center justify-around 2xl:h-1/2 2xl:flex-row">
+      <div className="flex w-full flex-col items-center justify-around lg:h-1/2 lg:flex-row">
         <div
           ref={textProductsRef}
           className="flex h-full flex-col gap-2 p-4 opacity-0"
         >
-          <h1 className="text-center text-7xl md:text-8xl 2xl:text-justify">
+          <h1 className="text-center text-6xl md:text-7xl lg:text-justify 2xl:text-8xl">
             Chose <br /> your phone
           </h1>
-          <div className="flex flex-row items-center justify-center gap-4 py-2 2xl:justify-normal">
+          <div className="flex flex-row items-center justify-center gap-4 py-2 lg:justify-normal">
             {/* Botão para retroceder produtos */}
             <button
               onClick={prevCard}
               disabled={startCard === 0}
-              className={`rounded-full border-2 border-btn-yellow p-2 transition duration-300 ease-in-out md:p-3 ${startCard === 0 ? "opacity-50" : "hover:shadow-btn"}`}
+              className={`rounded-full border-2 border-btn-yellow p-2 transition duration-300 ease-in-out lg:p-3 ${startCard === 0 ? "opacity-50" : "hover:shadow-btn"}`}
             >
               <ArrowLeft color="#ece653" />
             </button>
@@ -123,7 +123,7 @@ export function SectionProducts() {
             <button
               onClick={nextCard}
               disabled={startCard + 3 >= products.length}
-              className={`rounded-full border-2 border-btn-yellow p-2 transition duration-300 ease-in-out md:p-3 ${startCard + 3 >= products.length ? "opacity-50" : "hover:shadow-btn"}`}
+              className={`rounded-full border-2 border-btn-yellow p-2 transition duration-300 ease-in-out lg:p-3 ${startCard + 3 >= products.length ? "opacity-50" : "hover:shadow-btn"}`}
             >
               <ArrowRight color="#ece653" />
             </button>
@@ -131,7 +131,7 @@ export function SectionProducts() {
         </div>
 
         {/* Products */}
-        <aside className="flex h-full flex-row items-center gap-2 px-2 md:gap-8 md:px-4">
+        <aside className="flex h-full flex-row items-center gap-2 px-2 md:px-4 lg:gap-4 2xl:gap-8">
           {/* Renderiza os produtos visíveis */}
           {products.slice(startCard, startCard + 3).map((product, index) => (
             <div
@@ -144,23 +144,23 @@ export function SectionProducts() {
                 }
               }}
               key={product.id}
-              className="flex h-60 w-[7.4rem] flex-col items-center justify-center space-y-3 rounded-3xl bg-card-gradient md:h-80 md:w-60 md:space-y-8 2xl:h-96 2xl:w-72"
+              className="flex h-60 w-[7.4rem] flex-col items-center justify-center space-y-3 rounded-3xl bg-card-gradient lg:h-80 lg:w-56 lg:space-y-8 2xl:h-96 2xl:w-72"
             >
               <Image
-                className="w-16 md:w-28 2xl:w-32"
+                className="w-16 lg:w-28 2xl:w-32"
                 src={product.img}
                 alt={product.name}
               />
-              <div className="flex w-full flex-col px-4 md:px-6">
-                <h1 className="flex flex-col text-xl md:flex md:flex-row md:items-center md:gap-2 md:text-4xl">
+              <div className="flex w-full flex-col px-4 lg:px-6">
+                <h1 className="flex flex-col text-xl lg:flex lg:flex-row lg:items-center lg:gap-2 lg:text-4xl">
                   {product.name}{" "}
-                  <span className="text-[10px] text-zinc-300 md:mt-2 md:text-xs">
+                  <span className="text-[10px] text-zinc-300 lg:mt-2 lg:text-xs">
                     (Best seller)
                   </span>
                 </h1>
                 <div className="flex flex-row items-center gap-2">
-                  <Star color="#6dd04c" className="size-3 md:size-4" />
-                  <h3 className="pt-1 text-base md:text-2xl">
+                  <Star color="#6dd04c" className="size-3 lg:size-4" />
+                  <h3 className="pt-1 text-base lg:text-2xl">
                     {product.rating}
                   </h3>
                 </div>
@@ -171,7 +171,7 @@ export function SectionProducts() {
         </aside>
       </div>
       {/* Div wave svg */}
-      <div className="absolute inset-x-0 bottom-0 w-full opacity-20">
+      <div className="absolute inset-x-0 bottom-0 -z-10 w-full opacity-20">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
           <path
             fill="#585858"

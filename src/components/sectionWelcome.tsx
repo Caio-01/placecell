@@ -52,7 +52,7 @@ export function SectionWelcome() {
         className="space-y-5 p-3 opacity-0 md:w-2/5 md:space-y-5"
       >
         <div className="flex flex-col px-4 text-center md:px-2 md:text-start">
-          <h1 className="text-6xl lg:text-7xl 2xl:text-9xl">
+          <h1 className="text-6xl lg:text-8xl 2xl:text-9xl">
             Find diversity <br />
             on our <span>phones</span>
           </h1>
